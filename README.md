@@ -7,7 +7,7 @@
 
 ## Overview
 
-This repository provides a **unified R framework** for comparing social media engagement patterns across **Facebook**, **Instagram**, and **Reddit**. It enables researchers to harmonize data from multiple platforms into a single analytical pipeline and conduct systematic cross-platform comparisons of user engagement with news and information content.
+Unified R framework for comparing social media engagement across **Facebook**, **Instagram**, and **Reddit** via a harmonized data schema and systematic cross-platform comparison pipeline.
 
 ---
 
@@ -16,7 +16,7 @@ This repository provides a **unified R framework** for comparing social media en
 | Repository | Description |
 |---|---|
 | 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) | PhD thesis project |
-| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit: general, COVID-19 extension & misinfo spike detection |
+| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit |
 | 🧠 [stm-social-media-r](https://github.com/sawoodanwar/stm-social-media-r) | STM topic modeling toolkit |
 | 💬 [sentiment-lexicon-comparison](https://github.com/sawoodanwar/sentiment-lexicon-comparison) | AFINN, Bing, NRC lexicon comparison |
 | 📊 [meta-content-analysis](https://github.com/sawoodanwar/meta-content-analysis) | Facebook & Instagram health misinformation analysis |
@@ -24,16 +24,9 @@ This repository provides a **unified R framework** for comparing social media en
 | 🔴 [disinformation-detection-ml](https://github.com/sawoodanwar/disinformation-detection-ml) | ML classifier for disinformation detection |
 | 🟣 [nlp-news-classification-r](https://github.com/sawoodanwar/nlp-news-classification-r) | Supervised NLP news classification |
 | 🟢 [crowdtangle-meta-api-workflow](https://github.com/sawoodanwar/crowdtangle-meta-api-workflow) | Academic data collection pipeline |
-
----
-
-## Research Objectives
-
-- Harmonize engagement data from Facebook, Instagram, and Reddit into a unified schema
-- Compare engagement metrics (reactions, comments, shares, upvotes) across platforms
-- Identify platform-specific patterns in news consumption and interaction
-- Visualize cross-platform trends over time
-- Support multi-platform studies in computational communication research
+| 📊 [survey-data-analysis-r](https://github.com/sawoodanwar/survey-data-analysis-r) | Survey data cleaning, Likert analysis & descriptives |
+| 📝 [survey-scale-validation-r](https://github.com/sawoodanwar/survey-scale-validation-r) | Scale validation: EFA/CFA, Cronbach alpha, reliability |
+| 🧪 [survey-experiment-analysis-r](https://github.com/sawoodanwar/survey-experiment-analysis-r) | Survey experiment & vignette study analysis |
 
 ---
 
@@ -43,34 +36,10 @@ This repository provides a **unified R framework** for comparing social media en
 |---|---|---|---|
 | `post_id` | Post ID | Media ID | Submission ID |
 | `platform` | facebook | instagram | reddit |
-| `text` | Post text | Caption | Title + selftext |
 | `date` | created_time | timestamp | created_utc |
 | `likes` | like_count | like_count | score |
 | `comments` | comments | comments | num_comments |
 | `shares` | shares | — | — |
-| `reactions` | total reactions | — | upvote_ratio |
-| `source` | page_name | username | subreddit |
-
----
-
-## Repository Structure
-
-```
-cross-platform-engagement-analysis/
-├── scripts/
-│   ├── 01_harmonize_data.R
-│   ├── 02_descriptive_comparison.R
-│   ├── 03_timeseries_comparison.R
-│   └── 04_visualization.R
-├── data/README.md
-├── output/figures/
-├── output/tables/
-├── .gitignore
-├── README.md
-└── LICENSE
-```
-
----
 
 ## Requirements
 
@@ -82,14 +51,11 @@ install.packages(c("tidyverse", "lubridate", "ggplot2", "patchwork", "scales", "
 
 ## Author
 
-**Sawood Anwar** — PhD in Humanities (Text and Communication Sciences), University of Urbino Carlo Bo
-Defended: 22 September 2025 | Supervisor: Prof. Fabio Giglietto
+**Sawood Anwar** — PhD in Humanities, University of Urbino Carlo Bo | Defended: 22 September 2025
 
 - 🔗 [GitHub](https://github.com/sawoodanwar) | 💼 [LinkedIn](https://www.linkedin.com/in/sawood-anwar/) | 🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=GgsMu3sAAAAJ)
 
----
-
 ## License
-MIT License. See [LICENSE](LICENSE).
+MIT License.
 
-*Keywords: Cross-Platform Analysis, Facebook, Instagram, Reddit, Social Media Engagement, Computational Communication, R, Comparative Methods*
+*Keywords: Cross-Platform Analysis, Facebook, Instagram, Reddit, Social Media Engagement, R*

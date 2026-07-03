@@ -9,11 +9,21 @@
 
 This repository provides a **unified R framework** for comparing social media engagement patterns across **Facebook**, **Instagram**, and **Reddit**. It enables researchers to harmonize data from multiple platforms into a single analytical pipeline and conduct systematic cross-platform comparisons of user engagement with news and information content.
 
-> **Related Projects:**
-> - 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) — PhD thesis
-> - 📊 [meta-content-analysis](https://github.com/sawoodanwar/meta-content-analysis) — Facebook & Instagram
-> - 🗳️ [reddit-political-misinfo-coding](https://github.com/sawoodanwar/reddit-political-misinfo-coding) — Reddit project
-> - ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) — Time-series toolkit
+---
+
+## 🔗 Related Projects
+
+| Repository | Description |
+|---|---|
+| 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) | PhD thesis project |
+| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit: general, COVID-19 extension & misinfo spike detection |
+| 🧠 [stm-social-media-r](https://github.com/sawoodanwar/stm-social-media-r) | STM topic modeling toolkit |
+| 💬 [sentiment-lexicon-comparison](https://github.com/sawoodanwar/sentiment-lexicon-comparison) | AFINN, Bing, NRC lexicon comparison |
+| 📊 [meta-content-analysis](https://github.com/sawoodanwar/meta-content-analysis) | Facebook & Instagram health misinformation analysis |
+| 🗳️ [reddit-political-misinfo-coding](https://github.com/sawoodanwar/reddit-political-misinfo-coding) | Reddit political communication manual coding |
+| 🔴 [disinformation-detection-ml](https://github.com/sawoodanwar/disinformation-detection-ml) | ML classifier for disinformation detection |
+| 🟣 [nlp-news-classification-r](https://github.com/sawoodanwar/nlp-news-classification-r) | Supervised NLP news classification |
+| 🟢 [crowdtangle-meta-api-workflow](https://github.com/sawoodanwar/crowdtangle-meta-api-workflow) | Academic data collection pipeline |
 
 ---
 
@@ -48,15 +58,13 @@ This repository provides a **unified R framework** for comparing social media en
 ```
 cross-platform-engagement-analysis/
 ├── scripts/
-│   ├── 01_harmonize_data.R         # Unify platform schemas into one dataframe
-│   ├── 02_descriptive_comparison.R # Summary stats and cross-platform tables
-│   ├── 03_timeseries_comparison.R  # Weekly trends across platforms
-│   └── 04_visualization.R          # Comparative plots and heatmaps
-├── data/
-│   └── README.md
-├── output/
-│   ├── figures/
-│   └── tables/
+│   ├── 01_harmonize_data.R
+│   ├── 02_descriptive_comparison.R
+│   ├── 03_timeseries_comparison.R
+│   └── 04_visualization.R
+├── data/README.md
+├── output/figures/
+├── output/tables/
 ├── .gitignore
 ├── README.md
 └── LICENSE
